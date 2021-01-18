@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import ReactDOM from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Link } from 'react-router-dom'
+
+//StyleSheets
+import 'antd/dist/antd.css';
+import './stylesheets/App.scss';
+
+import { Layout, Col, Button } from 'antd';
+
+export default class Home extends Component {
+  render() {
+    return (
+
+      <Col className="home">
+        <h1>Clean3000</h1>
+        <h2>Avis de passage</h2>
+        <Link to='/avisdepassage'>
+          <Button className="button">Créer un avis de passage</Button>
+        </Link>
+      </Col>
+
+    )
+  }
 }
-
-export default App;
