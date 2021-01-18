@@ -1,0 +1,86 @@
+@import "_variables";
+@import "_reset";
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .button {
+        background-color: $color-primary;
+        height: 50px;
+
+        margin: 2vh 0;
+        border-radius: 6px;
+        border: rgb(56, 110, 56) 3px solid;
+
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.avisDePassage {
+    .header {
+        display: flex;
+        background-color: $color-primary;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 20px 5px;
+        p {
+            width: 80%;
+            margin: 0;
+        }
+    }
+
+    .form {
+        padding: 0rem 5rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        .form {
+            margin: 0;
+            width: 80%;
+        }
+        .ant-form-item-control-input-content {
+            max-width: 600px;
+        }
+        .ant-form-item {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: space-around;
+
+            .ant-form-item-required {
+                color: whitesmoke;
+            }
+        }
+
+        button {
+            background-color: rgb(177, 84, 84);
+            height: 50px;
+            margin: 2vh 0;
+            border-radius: 10px;
+            box-shadow: none;
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .sigCanvas {
+            background-color: white;
+            height: 100px;
+            width: 100%;
+            border: 1px black solid;
+        }
+    }
+}
+.resumeAvis {
+    background-color: #bcb9b9;
+    border: #706e6e 2px solid;
+    padding: 10px;
+    font-size: 15px;
+}

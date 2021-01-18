@@ -6,7 +6,7 @@ import './index.css';
 
 //Components
 import App from './App';
-import AvisPassage from './components/AvisPassage'
+import AvisPassageForm from './components/AvisPassageForm'
 
 
 import reportWebVitals from './reportWebVitals';
@@ -22,7 +22,7 @@ const Root = () => (
   <Router>
     <Switch>
       <Route exact path='/' component={App} />
-      <Route exact path='/avisdepassage' component={AvisPassage} />
+      <Route exact path='/avisdepassage' component={AvisPassageForm} />
     </Switch>
   </Router>
 )
