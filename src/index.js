@@ -1,12 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+//StyleSheets
 import './index.css';
+
+//Components
 import App from './App';
+import AvisPassage from './components/AvisPassage'
+
+
 import reportWebVitals from './reportWebVitals';
+
+//Route
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
+
+const Root = () => (
+  <Router>
+    <Switch>
+      <Route exact path='/' component={App} />
+      <Route exact path='/avisdepassage' component={AvisPassage} />
+    </Switch>
+  </Router>
+)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Root></Root>
   </React.StrictMode>,
   document.getElementById('root')
 );
